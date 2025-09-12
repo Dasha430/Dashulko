@@ -1,11 +1,12 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue';
-
+import CatalogButton from './components/CatalogButton.vue';
 </script>
 
 <template>
 <Header />
+<CatalogButton />
 </template>
 
 <style scoped>
