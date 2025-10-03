@@ -19,7 +19,6 @@ import FoterMobilka from './components/Memu.vue'
     .Sliders {
         width: 100%;
     }
-
 }
 @media (min-width: 540px) {
     .qwe{
