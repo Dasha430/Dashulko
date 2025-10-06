@@ -1,7 +1,6 @@
 <template lang="">
 
-   <div class="foot">
-        <div class="fob">
+   <footer class="foot">
             <div class="img_size">
                 <div><img src="..//assets/katalog.svg"></div>
                     <p>Избранное</p> 
@@ -24,8 +23,7 @@
                     <img class="av_position" src="..//assets/avatar.svg">
                 </div>
            </div>
-        </div>
-   </div>
+   </footer>
 
 </template>
 <script>
@@ -41,17 +39,22 @@ export default {
     font-style: normal;
 }
 
+@media (max-width: 420px) {
+    .img_size>p{
+        font-size: 10px;
+}
+}
+
 .foot {
     display: flex;
     align-items: center;
-    justify-content: center;
-    grid-gap: 40px;
+    justify-content: space-between;
     padding: 16px;
     margin: 0px;
-    border-bottom: solid #EAE7DC;
-    margin-top: -100px;
+    width: calc(100% - 32px);
+    bottom: 0;
+    position: absolute;
 }
-
 
 .kat_ser_logo {
     display: flex;
@@ -64,11 +67,6 @@ export default {
     gap: 16px;
     width: 100%;
     justify-content: space-between;
-}
-
-.fob {
-    display: flex;
-    gap: 24px;
 }
 
 .img_size {
@@ -114,7 +112,8 @@ export default {
     .kat_text {
         display: none;
     }
-    .fob{
+
+    .fob {
         display: none;
     }
 }

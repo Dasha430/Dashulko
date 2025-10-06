@@ -1,16 +1,23 @@
 
 <script setup>
-import Head from './components/Headr.vue'
+import Headr from './components/Headr.vue'
 import FoterMobilka from './components/Memu.vue'
+import KartochkaTovara from './components/KartochkaTovara.vue';
+import Star from './components/Star.vue';
 </script>
 
 <template>
-<Head />
+    
+<Headr />
 <img class="Sliders" src=".//assets/Sliders.svg"> 
-<div class="qwe"><FoterMobilka/></div>
+<KartochkaTovara/>
+<div class="FoterMobilka"><FoterMobilka/></div>
 </template>
 
 <style>
+    .FoterMobilka{
+        display: none;
+}
     .Sliders{
         width: 100%;
     }
@@ -20,9 +27,9 @@ import FoterMobilka from './components/Memu.vue'
         width: 100%;
     }
 }
-@media (min-width: 540px) {
-    .qwe{
-        display: none;
-    }
+@media (max-width: 540px) {
+    .FoterMobilka{
+        display: flex;
+}
 }
 </style>
