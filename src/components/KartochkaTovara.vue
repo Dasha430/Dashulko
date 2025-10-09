@@ -25,7 +25,7 @@ import Star from './Star.vue';
         <div class="botom">
             <span class="name_tovara">Г/Ц Блинчики с мясом вес, Россия</span>
             <Star rate="4"/>
-            <button class="korzina"></button>
+            <button class="korzina">В корзину</button>
         </div>
     </div>
 </div>
@@ -42,6 +42,12 @@ export default {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+}
+
+.inf{
+    display: grid;
+    gap: 8px;
+    padding: 8px;
 }
 
 .img{
@@ -64,6 +70,7 @@ export default {
 .osn{
     width: 100%;
     height: 349px;
+    max-width: 349px;
 }
 
 .light_text{
@@ -81,10 +88,13 @@ export default {
 
 .korzina{
     border-radius: 4px;
+    background: white;
     border: 1px solid #70C05B;
     color: #70C05B;
     text-align: center;
     font-size: 16PX;
-  
+    width: 100%;
+    margin: 0 8px 8px 8px;
+    padding: 8px;
 }
 </style>
