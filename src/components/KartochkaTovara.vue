@@ -23,7 +23,7 @@ import Star from './Star.vue';
         </div>
 
         <div class="botom">
-            <span class="name_tovara">Г/Ц Блинчики с мясом вес, Россия</span>
+            <p class="name_tovara">Г/Ц Блинчики с мясом вес, Россия</p>
             <Star rate="4"/>
             <button class="korzina">В корзину</button>
         </div>
@@ -68,9 +68,12 @@ export default {
 }
 
 .osn{
-    width: 100%;
-    height: 349px;
-    max-width: 349px;
+    background: white;
+    height: 100%;
+    max-width: 272px;
+    display: grid;
+    justify-content: center;
+    border-radius: 4px;
 }
 
 .light_text{
@@ -80,6 +83,16 @@ export default {
 
 .name_tovara{
     font-size: 16px;
+    display: flex;
+    width: 100%;
+    line-height: 16px;
+    text-wrap:wrap;
+    max-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
 }
 
 .price{
@@ -94,7 +107,6 @@ export default {
     text-align: center;
     font-size: 16PX;
     width: 100%;
-    margin: 0 8px 8px 8px;
     padding: 8px;
 }
 </style>

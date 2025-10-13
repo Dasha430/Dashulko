@@ -18,9 +18,8 @@ import KartochkaTovara from './components/KartochkaTovara.vue';
         <img src=".//assets/chevron_right.svg">
     </div>
     <div class="all_tovar">
-        <KartochkaTovara/>
-        <KartochkaTovara/>
-        <KartochkaTovara/>
+        <KartochkaTovara img=""/>
+
     </div>
 </div>
 </template>
@@ -28,7 +27,7 @@ import KartochkaTovara from './components/KartochkaTovara.vue';
 <style>
     .heading_and_tovar{
         font-size: 36px;
-        background: #FBF8EC;
+
         flex-wrap: wrap;
         display: flex;
         text-align: left;
